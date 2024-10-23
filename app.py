@@ -88,10 +88,14 @@ if generate_clicked:
 
 # Clear button to reset all fields and descriptions
 if clear_clicked:
+    st.session_state.product_name = ""
+    st.session_state.product_category = ""
+    st.session_state.product_features = ""
+    st.session_state.tone = 'Professional'
     st.session_state.descriptions.clear()  # Clear stored descriptions
     st.session_state.last_inputs = (None, None, None, None)  # Reset last inputs
-    # Clear inputs in the sidebar
-    st.experimental_rerun()  # Refresh to clear the inputs
+    # Optionally display a message to confirm clearing
+    st.sidebar.success("Cleared!")  # Refresh to clear the inputs
 
 # Check if there are any descriptions to display
 # Check if there are any descriptions to display
