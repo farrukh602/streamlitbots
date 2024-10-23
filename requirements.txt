@@ -1,9 +1,6 @@
-langchain
-langchain_community
-langchain-huggingface
-langchain_chroma
+huggingface-hub
 python-dotenv
 streamlit
-replicate
+
 
 
