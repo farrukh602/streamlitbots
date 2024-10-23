@@ -89,9 +89,9 @@ if generate_clicked:
 # Clear button to reset all fields and descriptions
 if clear_clicked:
     st.session_state.descriptions.clear()  # Clear stored descriptions
-    st.session_state.last_inputs = (None, None, None, None)  # Reset last inputs
-    # Optionally display a message to confirm clearing
-    st.sidebar.success("Cleared!")  # Refresh to clear the inputs
+    st.session_state.last_inputs = (None, None, None, None) 
+    
+    st.sidebar.success("Cleared!")
 
 # Check if there are any descriptions to display
 # Check if there are any descriptions to display
